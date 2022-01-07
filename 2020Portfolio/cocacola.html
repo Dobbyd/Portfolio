@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Maarten Veenstra" content="Maarten Veenstra">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maarten Veenstra Portfolio Website</title>
+    <link rel="stylesheet" href="httpls://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8955751e83.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="index.html"><img src="images/logoMV.png" alt="Logo Maarten Veenstra"></a></div>
+        <button class="nav-toggle" aria-label="toggle-navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#OverMijScroll" class="nav__link">Wie ben ik</a></li>
+                <li class="nav__item"><a href="index.html#ProjectenScroll" class="nav__link">Projecten</a></li>
+                <li class="nav__item"><a href="index.html#ContactScroll" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <a href="index.html" class="terugKnop">Terug</a>
+
+        <section class="intro" id="Homescroll">
+            <h1 class="section__title section__title--intro">Coca Cola <strong>Website</strong></h1>
+            <p class="section__subtitle section__subtitle--intro">Bestaande site, schonere code</p>
+            <img src="images/cocacola1.png" alt="Coca Cola Website" class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+
+            <h3>Opdracht:</h3>
+            <p>Maak een bestaande site na met zo min mogelijk divs en classes/id's. Maak deze site toegankelijk voor mensen met een beperking.</p>
+            <h3>Focus:</h3>
+            <p>HTML, CSS, JS, UX</p>
+            <h3>Proces:</h3>
+            <p>Met behulp van de inspector de assets van de bestaande site getrokken en vervolgens een compleet nieuwe site gemaakt met HTML, CSS en Javascript. Elementen toegevoegd waarmee de gebruiker door de hele site kan navigeren met de Tab knop en een theme switch toegevoegd waarmee een dark-mode aan en uit gezet kan worden.</p>
+            <h3>Link naar Project</h3>
+            <p>
+                <a href="https://github.com/Dobbyd/BlokWeb2020">https://github.com/Dobbyd/BlokWeb2020</a>
+            </p>
+
+            <img src="images/cocacola1.png" alt="Coca Cola Website" class="intro__img" width="50%">
+            <img src="images/cocacola2.jpg" alt="Coca Cola Website" class="intro__img" width="50%">
+            <h3 class="reflection">Reflectie</h3>
+            <p>Deze site maakt optimaal gebruik van css selectoren en enkele obscure trucjes en is hierdoor semantisch bijna perfect. Ook is de site volledig responsive voor ieder device. Aangezien ik niet enorm ervaren ben met coderen ben ik erg tevreden over het eindresultaat. Ik denk hiermee een goede basis te hebben gelegd voor projecten die werken met enkel HTML, CSS en JS.</p>
+
+
+        </div>
+
+    </main>
+
+    <!--Footer -->
+    <footer class="footerItem">
+        <a href="mailto:maarten.veenstra@hhotmail.com" class="footer__link">maarten.veenstra@hotmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com/Dobbyd"><i class="fab fa-github"></i></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="linkedin.com/in/maarten-veenstra-378b5aa6"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </footer>
+
+
+    <script src="scripts/script.js"></script>
+</body></html>
