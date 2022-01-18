@@ -27,6 +27,8 @@
 
 }
 
+/* Media query Font size */
+
 @media (min-width: 800px) {
 
     :root {
@@ -43,6 +45,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 70px;
 }
 
 body {
@@ -52,6 +55,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 section {
@@ -135,7 +139,7 @@ header {
     justify-content: space-between;
     padding: 1em;
     background: var(--clr-accent);
-    z-index: 3;
+    z-index: 5;
 }
 
 .logo {
@@ -294,6 +298,8 @@ main {
     }
 }
 
+/* About Me */
+
 .overMij {
     margin: 0 auto;
     padding: 4em 6em;
@@ -362,16 +368,40 @@ main {
 
 }
 
+
 .containerPortfolio {
     object-fit: cover;
     overflow: hidden;
 }
 
-.portfolio__item {
+.itemDiv {
+    overflow: hidden;
     background: var(--clr-accent);
     overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.itemDiv h3 {
+    position: absolute;
+    text-align: center;
+    left: 20%;
+    top: 45%;
+    width: 10em;
+    z-index: 3;
+    text-shadow: 2px 2px black;
+    display: none;
+
 
 }
+
+.itemDiv:hover h3 {
+    display: block;
+    pointer-events: none;
+}
+
+
+
 
 .portfolio__img {
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1). opacity 250 ms linear;
@@ -445,6 +475,7 @@ main {
     background-color: var(--clr-accent);
     padding: 1em;
     border-radius: 1em;
+    z-index: 4;
 }
 
 .portfolio-item-individual {
@@ -615,51 +646,57 @@ form button[type="submit"]:hover {
     }
 }
 
+/* Responsiveness */
 
+@media screen and (max-width: 600px) {
+    .overMij__body {
+        font-size: 0.8em;
+        width: 130%;
+        position: relative;
+        left: -1.5em;
+    }
 
-
-/* OLD CSS BACKUP
-nav {
-    width: 100%;
-    text-align: center;
-}
-
-ul {
-    position: sticky;
-    width: 100%;
-    list-style: none;
-    background-color: #3ba4cf;
-    margin: 0;
-    padding: 1em 0em;
-    display: flex;
-    align-items: center;
-    justify-content:
-}
-
-ul img {
-    max-width: 15em;
-    margin: 0em 2em;
-}
-
-li {
-    display: inline;
-    color: white;
-    font-size: 1.3em;
+    .portfolio {
+        width: 80%;
+        position: relative;
+        left: -2.8em;
+    }
 
 }
 
-li + li a {
-    margin-left: 20em;
-    text-decoration: none;
-    color: white;
+@media screen and (min-width: 596px) {
+    .section__subtitle--intro {
+        align-self: start;
+        grid-column: -1 / 1;
+        grid-row: 2;
+        text-align: right;
+        position: relative;
+        left: -1.5em;
+        width: 30em;
+    }
+
 }
 
-li + li a:hover {
-    color: black;
+@media screen and (min-width: 596px) and (max-width: 800px) {
+    .section__title--intro {
+        position: relative;
+        font-size: 2em;
+        left: -1.5em;
+    }
 }
 
-section {
-    width: 100%;
-    position: relative;
+@media screen and (min-width: 596px) and (max-width: 800px) {
+    .section__title--intro {
+        position: relative;
+        font-size: 2em;
+        left: -1.5em;
+    }
 }
-*/
+
+@media screen and (min-width: 801px) and (max-width: 1020px) {
+    .section__title--intro {
+
+        font-size: 2.6em;
+        left: -1.5em;
+    }
+}
